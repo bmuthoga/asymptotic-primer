@@ -1,9 +1,9 @@
-Python 2.7.12 (v2.7.12:d33e0cf91556, Jun 27 2016, 15:24:40) [MSC v.1500 64 bit (AMD64)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> # Function to generate prime numbers from 0 to n.
->>> 
->>> def prime_numbers(number):
+def prime_numbers(number):
 	list=[]
+	if number < 0:
+        return "Only positive numbers allowed."
+    if type(number) != int:
+        return "Only integers allowed."
 	for i in range(2,number+1):
 		if i>1:
 			for x in range(2,i):
@@ -12,5 +12,3 @@ Type "copyright", "credits" or "license()" for more information.
 			else:
 				list.append(i)
 	return list
-
->>> 
