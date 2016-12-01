@@ -3,7 +3,7 @@
 import unittest
 from prime_numbers import prime_numbers
 
-class TestCalculator(unittest.TestCase):
+class TestPrimeGenerator(unittest.TestCase):
 	
 	# Test if function correctly returns prime numbers. 
 	def test_prime_numbers(self):
